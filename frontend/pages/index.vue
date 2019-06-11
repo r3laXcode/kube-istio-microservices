@@ -1,22 +1,17 @@
 <template>
-  <section class="container">
-    <div>
+  <section class="container" >
+    <div class="text-center" style="margin-top:2em;">
       <logo/>
       <h1 class="title">
-        frontend
+        APP NUXT
       </h1>
       <h2 class="subtitle">
         Frontend Microservices
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+      <div class="text-center">
+        <h2 class="subtitle">
+          V1
+        </h2>
       </div>
     </div>
   </section>
@@ -32,15 +27,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
@@ -50,6 +38,7 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  padding-bottom:0
 }
 
 .subtitle {
