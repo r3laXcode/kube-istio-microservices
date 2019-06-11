@@ -4,3 +4,20 @@
 https://hackernoon.com/containerizing-a-node-js-api-using-docker-with-kubernetes-and-minikube-30255fd33ef9
 https://github.com/nparsons08/boilerplate-express-api/blob/master/docker.sh
 https://dockertips.com/kubernetes-cli
+
+https://medium.com/google-cloud/simplifying-microservices-with-istio-in-google-kubernetes-engine-part-i-849555f922b8
+
+https://github.com/nmallya/istiodemo/blob/master/petservice/routes/index.js
+https://github.com/nmallya/istiodemo/blob/master/petservice/app.js
+
+
+https://medium.com/faun/istio-step-by-step-part-02-getting-started-with-istio-c24ed8137741
+https://medium.com/faun/istio-step-by-step-part-03-deploying-an-application-with-istio-in-kubernetes-d2b1de64fb6b
+https://ballerina.io/
+
+## repo
+
+https://github.com/r3laXcode/kube-istio-microservices
+
+## url 
+http://138.197.234.107

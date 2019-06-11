@@ -38,6 +38,7 @@ build/Release
 frontend/node_modules/
 
 ref.txt
+build
 
 # Dependency directories
 node_modules/
