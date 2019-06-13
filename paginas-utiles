@@ -15,9 +15,18 @@ https://medium.com/faun/istio-step-by-step-part-02-getting-started-with-istio-c2
 https://medium.com/faun/istio-step-by-step-part-03-deploying-an-application-with-istio-in-kubernetes-d2b1de64fb6b
 https://ballerina.io/
 
+https://es.slideshare.net/arafkarsh/docker-kubernetes-istio
+https://medium.com/platformer-blog/enable-rolling-updates-in-kubernetes-with-zero-downtime-31d7ec388c81
+https://stackoverflow.com/questions/54631700/multiple-gateways-on-different-ports-of-the-same-istio-proxy-deployment-not-work
+
 ## repo
 
 https://github.com/r3laXcode/kube-istio-microservices
 
 ## url 
 http://138.197.234.107
+
+##debug 
+https://blog.codewithdan.com/4-kubectl-commands-to-help-debug-pod-issues-in-kubernetes/
+
+ kubectl exec [pod-name] -it sh
