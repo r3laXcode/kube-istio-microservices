@@ -29,4 +29,13 @@ http://138.197.234.107
 ##debug 
 https://blog.codewithdan.com/4-kubectl-commands-to-help-debug-pod-issues-in-kubernetes/
 
- kubectl exec [pod-name] -it sh
+kubectl exec [pod-name] -it sh
+
+## test pod 
+wget https://k8s.io/examples/admin/dns/busybox.yaml
+kubectl apply -f busybox.yaml
+kubectl get pods -n exampleistio
+
+kubectl exec -ti busybox -n exampleistio sh
+wget http://nombreservicio:port
+kubectl exec -ti busybox -- nslookup kubernetes.default
