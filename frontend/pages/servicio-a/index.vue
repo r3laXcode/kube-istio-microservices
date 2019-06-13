@@ -31,7 +31,8 @@ export default {
   data() {
     return {
       message:'',
-      url:'http://servicioa:5001',
+      url:'http://servicioa',
+      port:5001,
       data:[]
     }
   },
@@ -39,10 +40,15 @@ export default {
     async loadData(){
       this.message = 'cargando ...';
       try {
-          const response = await this.$axios.$get(this.url);
+          const response = await this.$axios.$get(this.url,{port:this.port});
           console.log(response);
           this.message = '';
           this.data = response;
+
+          const test = await fetch(this.url);
+          console.log(test)
+          const info = await test.json();
+          console.log(info)
 
       } catch(err) {
           console.log(err);

@@ -37,5 +37,7 @@ kubectl apply -f busybox.yaml
 kubectl get pods -n exampleistio
 
 kubectl exec -ti busybox -n exampleistio sh
+
+kubectl exec -ti appstatic-v1-7b45f7db47-rfzhc -n exampleistio sh
 wget http://nombreservicio:port
 kubectl exec -ti busybox -- nslookup kubernetes.default
