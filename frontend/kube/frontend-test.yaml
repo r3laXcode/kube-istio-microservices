@@ -8,7 +8,7 @@ metadata:
     service: appstatic
 spec:
   ports: 
-  - port: 5000
+  - port: 80
     name: http
   selector:
     app: appstatic
@@ -34,10 +34,10 @@ spec:
     spec:
       containers:
         - name: appstatic
-          image: syscomerhub/frontend:v1
+          image: registry.gitlab.com/andor-pierdelacabeza/dockerstatic:v1
           imagePullPolicy: Always
           ports:
-          - containerPort: 5000
+          - containerPort: 80
           
 ---
 apiVersion: networking.istio.io/v1alpha3
@@ -71,4 +71,4 @@ spec:
     - destination:
         host: appstatic
         port:
-          number: 5000
+          number: 80

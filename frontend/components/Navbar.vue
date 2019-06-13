@@ -16,6 +16,13 @@
           <li class="nav-item">
             <nuxt-link to="servicio-ext" tag="a" class="nav-link">Servicio Externo </nuxt-link>
           </li>
+          <li class="nav-item">
+            <a href="https://kubernetes.io/" target="_blank" class="nav-link">Kubernetes</a>
+          </li>
+           <li class="nav-item">
+            <a href="https://istio.io/" target="_blank" class="nav-link">Istio</a>
+          </li>
+          
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
