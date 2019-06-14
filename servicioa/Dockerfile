@@ -15,12 +15,12 @@ RUN npm install
 # build necessary, even if no static files are needed,
 
 # expose 5000 on container
-EXPOSE 5001
+EXPOSE 5000
 
 # set app serving to permissive / assigned
-ENV NUXT_HOST=0.0.0.0
+ENV NODE_HOST=0.0.0.0
 # set app port
-ENV NUXT_PORT=5001
+ENV NODE_PORT=5000
 
 # start the app
 CMD [ "npm", "start" ]

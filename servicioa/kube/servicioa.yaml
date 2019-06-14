@@ -8,7 +8,7 @@ metadata:
     service: servicioa
 spec:
   ports: 
-  - port: 5001
+  - port: 5000
     name: http
   selector:
     app: servicioa
@@ -37,7 +37,7 @@ spec:
           image: syscomerhub/servicioa:v1
           imagePullPolicy: Always
           ports:
-          - containerPort: 5001
+          - containerPort: 5000
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -50,8 +50,16 @@ spec:
   gateways:
   - app-gateway
   http:
-  - route:
+  - match:
+    - uri:
+        prefix: /api
+      headers:
+        Api:
+          exact: servicioa
+    rewrite:
+      uri: /
+    route:
     - destination:
-        host: servicioa
+        host: servicioa.exampleistio.svc.cluster.local
         port:
-          number: 5001
+          number: 5000

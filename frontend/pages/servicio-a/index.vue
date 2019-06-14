@@ -4,7 +4,7 @@
       <h3 class="title">
         Servicio A - Interno
       </h3>
-      <span >{{url}}</span>
+      <span >servicio config istio</span>
     </div>
     <div>
        <p v-if="message"> {{message}} </p>
@@ -31,24 +31,20 @@ export default {
   data() {
     return {
       message:'',
-      url:'http://servicioa',
-      port:5001,
       data:[]
     }
   },
   methods:{
     async loadData(){
       this.message = 'cargando ...';
+      let url = 'http://138.197.234.107/api';
+      
       try {
-          const response = await this.$axios.$get(this.url,{port:this.port});
-          console.log(response);
+          this.$axios.setHeader('Api','servicioa')
+          const response = await this.$axios.$get(url);
           this.message = '';
           this.data = response;
-
-          const test = await fetch(this.url);
-          console.log(test)
-          const info = await test.json();
-          console.log(info)
+          console.log(response);
 
       } catch(err) {
           console.log(err);

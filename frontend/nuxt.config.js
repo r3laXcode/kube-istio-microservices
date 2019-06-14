@@ -1,4 +1,5 @@
 const pkg = require('./package')
+require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -17,6 +18,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  /*
+  * Customize API env
+  */
+ env:{
+  urlApi:process.env.BASE_URL || 'base_url',
+ },
 
   /*
   ** Customize the progress-bar color
@@ -50,6 +57,8 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+
+  
 
   /*
   ** Build configuration
