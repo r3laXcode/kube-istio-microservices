@@ -18,6 +18,8 @@ https://ballerina.io/
 https://es.slideshare.net/arafkarsh/docker-kubernetes-istio
 https://medium.com/platformer-blog/enable-rolling-updates-in-kubernetes-with-zero-downtime-31d7ec388c81
 https://stackoverflow.com/questions/54631700/multiple-gateways-on-different-ports-of-the-same-istio-proxy-deployment-not-work
+https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+http://kubernetesbyexample.com/
 
 ## repo
 
