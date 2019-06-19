@@ -37,10 +37,16 @@ kubectl apply -f busybox.yaml
 kubectl get pods -n exampleistio
 
 kubectl exec -ti busybox -n exampleistio sh
+kubectl exec -ti serviciob-v1-56477cfb5f-dhp2p -n exampleistio sh
 
 kubectl exec -ti appstatic-v1-7b45f7db47-rfzhc -n exampleistio sh
 wget http://nombreservicio:port
 kubectl exec -ti busybox -- nslookup kubernetes.default
+
+## test servicio b 
+ping serviciob:5000
+wget serviciob:5000
+cat index.html
 
 para ver el servio entrar al pod y ver las variables de entorno
 env
