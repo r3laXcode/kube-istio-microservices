@@ -55,3 +55,6 @@ env
 
 curl http://138.197.234.107/api/v1/servicioa -H "host: api.syscomer.com"
 
+## test serviciob con busybox 
+
+wget serviciob:5000/serviciob

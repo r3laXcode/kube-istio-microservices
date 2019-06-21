@@ -12,6 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.15.0",
-    "faker": "4.1.0"
+    "faker": "4.1.0",
+    "body-parser": "^1.18.2",
+    "cors": "~2.8.4",
+    "kube-probe": "~0.3.1"
   }
 }
